@@ -1,0 +1,227 @@
+body {
+  background-color: rgb(245, 245, 245);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body,
+h1,
+h2,
+h3,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px 0;
+  font-size: 0.75rem;
+}
+
+.top-nav .language,
+.top-nav .info {
+  display: flex;
+}
+
+.top-nav .language li a,
+.top-nav .info li a {
+  margin-right: 20px;
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 20px 0;
+  padding-top: 20px;
+  border-top: 1px solid gray;
+}
+
+.main-nav .main-menu {
+  display: flex;
+}
+
+.main-nav .main-menu li {
+  margin-right: 20px;
+}
+
+.container {
+  height: 80vh;
+  background-color: aquamarine;
+}
+
+.container .login-box {
+  width: 250px;
+  height: 250px;
+
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+
+  position: relative;
+  left: 65%;
+  top: 5%;
+}
+
+.container .login-box form {
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 1rem;
+
+  font-size: 0.75rem;
+}
+
+.container .login-box .id,
+.container .login-box .password {
+  height: 2.5rem;
+  width: 85%;
+  border: none;
+  border-bottom: 1px solid black;
+
+  background-color: rgb(245, 245, 245);
+}
+
+.container .login-box .password {
+  margin-bottom: 10px;
+}
+
+.container .login-box form .subtn {
+  width: 85%;
+  margin: 10px 0;
+  padding: 12px 0;
+
+  border-radius: 0;
+  border: none;
+
+  color: white;
+  background-color: green;
+
+  font-weight: bolder;
+}
+
+.other-login {
+  font-size: 0.7rem;
+}
+
+.menu {
+  padding: 30px 0;
+  background-color: rgb(72, 72, 99);
+}
+
+.menu ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.menu ul li {
+  margin-right: 20px;
+}
+
+.menu ul li a {
+  color: white;
+}
+
+.seoul-img .seoul-img1 {
+  width: 70%;
+  height: 50vh;
+  background-color: bisque;
+
+  margin: 40px auto;
+}
+
+.bor-info {
+  height: 65vh;
+  background-color: rgb(228, 225, 222);
+
+  margin-top: 50px;
+}
+
+.bor-info h2 {
+  text-align: center;
+  padding-top: 40px;
+}
+
+.bor-info .bor-contaier {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 40px;
+}
+
+.bor-info .what {
+  margin-left: 40px;
+}
+
+.bor-info .how {
+  margin-right: 40px;
+}
+
+.bor-info .what,
+.bor-info .where,
+.bor-info .how {
+  width: 30%;
+  min-width: 300px;
+
+  background-color: white;
+}
+
+.bor-info .what .img1,
+.bor-info .where .img2,
+.bor-info .how .img3 {
+  height: 300px;
+  width: 100%;
+
+  background-color: blueviolet;
+
+  margin-bottom: 40px;
+}
+
+.bor-info .what p,
+.bor-info .where p,
+.bor-info .how p {
+  font-size: 0.9rem;
+}
+
+footer {
+  background-color: rgb(228, 225, 222);
+  margin-bottom: 200px;
+}
+
+.foot-container {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.foot-container ul {
+  display: flex;
+  margin: 20px 0;
+}
+
+.foot-container ul li {
+  margin-right: 20px;
+
+  font-size: 0.8rem;
+  font-weight: bolder;
+}
+
+.foot-container .copy-right {
+  display: flex;
+  justify-content: space-between;
+
+  font-size: 0.7rem;
+}
