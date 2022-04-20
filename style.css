@@ -85,7 +85,7 @@ nav {
   font-size: 0.75rem;
 }
 
-.container .login-box .id,
+.container .login-box .identify,
 .container .login-box .password {
   height: 2.5rem;
   width: 85%;
@@ -125,6 +125,8 @@ nav {
 .menu ul {
   display: flex;
   justify-content: space-around;
+  max-width: 70%;
+  margin: 0 auto;
 }
 
 .menu ul li {
@@ -137,10 +139,28 @@ nav {
 
 .seoul-img .seoul-img1 {
   width: 70%;
+  max-width: 600px;
   height: 50vh;
   background-color: bisque;
 
-  margin: 40px auto;
+  margin: 100px auto;
+}
+
+.seoul-img .seoul-img2 {
+  display: grid;
+  grid-template-columns: 600px 600px;
+  grid-template-rows: 350px 350px;
+  grid-gap: 1px;
+
+  justify-content: center;
+  margin-bottom: 200px;
+}
+
+.seoul-img .seoul-img2 .img1,
+.seoul-img .seoul-img2 .img2,
+.seoul-img .seoul-img2 .img3,
+.seoul-img .seoul-img2 .img4 {
+  background-color: rgb(129, 109, 85);
 }
 
 .bor-info {
@@ -157,23 +177,28 @@ nav {
 
 .bor-info .bor-contaier {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 
   margin-top: 40px;
 }
 
-.bor-info .what {
-  margin-left: 40px;
+.bor-contaier h3,
+.bor-contaier p {
+  margin-left: 20px;
 }
 
-.bor-info .how {
-  margin-right: 40px;
+.bor-contaier p {
+  padding-bottom: 20px;
+}
+
+.bor-info .where {
+  margin: 0 20px;
 }
 
 .bor-info .what,
 .bor-info .where,
 .bor-info .how {
-  width: 30%;
+  width: 370px;
   min-width: 300px;
 
   background-color: white;
@@ -182,7 +207,7 @@ nav {
 .bor-info .what .img1,
 .bor-info .where .img2,
 .bor-info .how .img3 {
-  height: 300px;
+  height: 250px;
   width: 100%;
 
   background-color: blueviolet;
@@ -196,13 +221,94 @@ nav {
   font-size: 0.9rem;
 }
 
+.rental-component {
+  margin: 100px 0;
+}
+
+.rental-component h2 {
+  text-align: center;
+}
+
+.rental-container {
+  display: flex;
+  justify-content: center;
+}
+
+.bicycle,
+.holder {
+  width: 570px;
+  margin: 20px 10px;
+}
+
+.bicycle .img1,
+.holder .img2 {
+  width: 570px;
+  height: 300px;
+
+  margin: 20px 0;
+  background-color: aquamarine;
+}
+
+.app-info {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+  color: white;
+  background-color: rgb(76, 139, 76);
+}
+
+.btns {
+  display: flex;
+  margin: 50px 0;
+}
+
+.btns p {
+  font-size: 0.8rem;
+}
+
+.appstore,
+.playstore {
+  width: 240px;
+  border: 2px solid white;
+  border-radius: 5px;
+
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.appstore {
+  margin-right: 20px;
+}
+
+.app-info .btns a,
+.app-info .btns a p {
+  color: white;
+}
+
+.app-info .left-info {
+  width: 800px;
+}
+
+.app-info .left-info p {
+  max-width: 620px;
+}
+
+.app-info .right-img {
+  width: 250px;
+  height: 350px;
+  margin-left: 100px;
+  background-color: aliceblue;
+}
+
 footer {
   background-color: rgb(228, 225, 222);
-  margin-bottom: 200px;
+  margin: 50px 0 200px 0;
 }
 
 .foot-container {
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   padding-top: 20px;
 }
