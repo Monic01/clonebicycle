@@ -1,333 +1,468 @@
-body {
-  background-color: rgb(245, 245, 245);
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: black;
+    text-decoration: none;
+    color: black;
 }
 
-body,
-h1,
-h2,
-h3,
-ul {
-  margin: 0;
-  padding: 0;
+body {
+    background-color: #FFFFFF;
 }
 
-nav {
-  width: 70%;
-  margin: 0 auto;
+.nav-container {
+    width: 1030px;
+    margin: 0 auto;
 }
 
-.top-nav {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 20px 0;
-  font-size: 0.75rem;
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: black;
+    border-bottom: 2px solid #F8F8F8;
+    padding: 16px 0;
 }
 
-.top-nav .language,
-.top-nav .info {
-  display: flex;
+.nav-top ul {
+    display: flex;
 }
 
-.top-nav .language li a,
-.top-nav .info li a {
-  margin-right: 20px;
+.nav-top ul li a {
+    margin: 0 15px;
 }
 
-.main-nav {
-  display: flex;
-  justify-content: space-between;
-
-  margin: 20px 0;
-  padding-top: 20px;
-  border-top: 1px solid gray;
+.language li a:first-child {
+    margin-left: 0;
 }
 
-.main-nav .main-menu {
-  display: flex;
+.info-form li a:last-child {
+    margin-right: 0;
 }
 
-.main-nav .main-menu li {
-  margin-right: 20px;
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
 }
 
-.container {
-  height: 80vh;
-  background-color: aquamarine;
+.nav-menu h1 {
+    color: transparent;
+    font-size: 0.5rem;
 }
 
-.container .login-box {
-  width: 250px;
-  height: 250px;
-
-  background-color: rgb(245, 245, 245);
-  text-align: center;
-
-  position: relative;
-  left: 65%;
-  top: 5%;
+.nav-menu h1 img {
+    width: 165px;
+    height: 38px;
 }
 
-.container .login-box form {
-  width: 90%;
-  margin: 0 auto;
-  padding-top: 1rem;
-
-  font-size: 0.75rem;
+.nav-menu ul {
+    display: flex;
 }
 
-.container .login-box .identify,
-.container .login-box .password {
-  height: 2.5rem;
-  width: 85%;
-  border: none;
-  border-bottom: 1px solid black;
-
-  background-color: rgb(245, 245, 245);
+.nav-menu ul li a {
+    margin: 0 50px;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-.container .login-box .password {
-  margin-bottom: 10px;
+.nav-menu ul li a:last-child {
+    margin-right: 0;
 }
 
-.container .login-box form .subtn {
-  width: 85%;
-  margin: 10px 0;
-  padding: 12px 0;
-
-  border-radius: 0;
-  border: none;
-
-  color: white;
-  background-color: green;
-
-  font-weight: bolder;
+.main-img {
+    height: 720px;
+    background-size: auto;
+    background: url(/src/main_img.jpg) center no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.other-login {
-  font-size: 0.7rem;
+.content {
+    position: absolute;
+    width: 1712px;
+    height: 720px;
+    margin: 0 auto;
 }
 
-.menu {
-  padding: 30px 0;
-  background-color: rgb(72, 72, 99);
+
+.login-form {
+    width: 250px;
+    height: 250px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 40px;
+    right: 340px;
+
+    background-color: #FFFFFF;
+    border: 1px solid black;
 }
 
-.menu ul {
-  display: flex;
-  justify-content: space-around;
-  max-width: 70%;
-  margin: 0 auto;
+.login-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
 }
 
-.menu ul li {
-  margin-right: 20px;
+.login-form form input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 15px 0;
 }
 
-.menu ul li a {
-  color: white;
+#login {
+    cursor: pointer;
+    height: 40px;
+    padding-top: 10px;
+    background-color: #056531;
+    color: white;
+    font-weight: bold;
 }
 
-.seoul-img .seoul-img1 {
-  width: 70%;
-  max-width: 600px;
-  height: 50vh;
-  background-color: bisque;
-
-  margin: 100px auto;
+.login-search {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 100%;
+    margin: 10px 0;
 }
 
-.seoul-img .seoul-img2 {
-  display: grid;
-  grid-template-columns: 600px 600px;
-  grid-template-rows: 350px 350px;
-  grid-gap: 1px;
-
-  justify-content: center;
-  margin-bottom: 200px;
+#checkbox p {
+    border: 1px solid #056531;
 }
 
-.seoul-img .seoul-img2 .img1,
-.seoul-img .seoul-img2 .img2,
-.seoul-img .seoul-img2 .img3,
-.seoul-img .seoul-img2 .img4 {
-  background-color: rgb(129, 109, 85);
+.auto-set {
+    display: flex;
 }
 
-.bor-info {
-  height: 65vh;
-  background-color: rgb(228, 225, 222);
-
-  margin-top: 50px;
+.auto-set label {
+    display: flex;
+    align-items: center;
 }
 
-.bor-info h2 {
-  text-align: center;
-  padding-top: 40px;
+.auto-set label input {
+    width: 20px;
 }
 
-.bor-info .bor-contaier {
-  display: flex;
-  justify-content: center;
-
-  margin-top: 40px;
+.no-mem-foreigner {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }
 
-.bor-contaier h3,
-.bor-contaier p {
-  margin-left: 20px;
+.no-mem-foreigner a {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: bold;
 }
 
-.bor-contaier p {
-  padding-bottom: 20px;
+.no-mem-foreigner a img {
+    margin: 0 5px;
 }
 
-.bor-info .where {
-  margin: 0 20px;
+.no-mem-foreigner a:first-child {
+    border-right: 1px solid #e2e2e2;
+
 }
 
-.bor-info .what,
-.bor-info .where,
-.bor-info .how {
-  width: 370px;
-  min-width: 300px;
-
-  background-color: white;
+.main-menu {
+    width: 100%;
+    height: 120px;
+    background-color: #24384A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.bor-info .what .img1,
-.bor-info .where .img2,
-.bor-info .how .img3 {
-  height: 250px;
-  width: 100%;
-
-  background-color: blueviolet;
-
-  margin-bottom: 40px;
+.main-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1030px;
+    margin: 0 auto;
 }
 
-.bor-info .what p,
-.bor-info .where p,
-.bor-info .how p {
-  font-size: 0.9rem;
+.main-menu ul li a {
+    color: white;
+    display: inline-block;
+    width: 256px;
+    height: 76px;
+    line-height: 76px;
+    padding-left: 97px;
+    font-size: 24px;
+}
+
+.main-menu ul li:nth-of-type(1) a {
+    background: url(/src/mainTab_1.gif);
+}
+
+.main-menu ul li:nth-of-type(2) a {
+    background: url(/src/mainTab_2.gif);
+}
+
+.main-menu ul li:nth-of-type(3) a {
+    background: url(/src/mainTab_3.gif);
+}
+
+.main-menu ul li:nth-of-type(4) a {
+    background: url(/src/mainTab_4.gif);
+}
+
+.sub-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    margin-bottom: 230px;
+}
+
+.city-img {
+    display: flex;
+    background: url(/src/main_img_02.jpg) center no-repeat;
+    background-size: auto;
+    height: 720px;
+    margin: 0 auto;
+    margin-bottom: 180px;
+}
+
+.rental-info {
+    width: 100%;
+    height: 640px;
+    background-color: #F6F6F7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rental-info h2 {
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.info-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1180px;
+    height: 430px;
+}
+
+.info1,
+.info2,
+.info3 {
+    width: 385px;
+    background-color: #FFFFFF;
+}
+
+.info1 .info-img {
+    background: url(/src/bikeseoul_img1.jpg) center no-repeat;
+    background-size: auto;
+    height: 240px;
+}
+
+.info2 .info-img {
+    background: url(/src/bikeseoul_img2.jpg) center no-repeat;
+    background-size: auto;
+    height: 240px;
+}
+
+.info3 .info-img {
+    background: url(/src/bikeseoul_img4.jpg) center no-repeat;
+    background-size: auto;
+    height: 240px;
+}
+
+.info-box .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    margin-left: 27px;
+}
+
+.info-box p {
+    font-size: 15px;
+    margin-left: 27px;
 }
 
 .rental-component {
-  margin: 100px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 550px;
+    margin-bottom: 300px;
 }
 
 .rental-component h2 {
-  text-align: center;
+    font-size: 35px;
+    margin-top: 160px;
+    margin-bottom: 60px;
 }
 
-.rental-container {
-  display: flex;
-  justify-content: center;
+.rental-box {
+    display: flex;
+    justify-content: space-between;
+    width: 1186px;
+    height: 340px;
 }
 
-.bicycle,
-.holder {
-  width: 570px;
-  margin: 20px 10px;
+.rental1,
+.rental2 {
+    width: 586px;
+    height: 425px;
 }
 
-.bicycle .img1,
-.holder .img2 {
-  width: 570px;
-  height: 300px;
-
-  margin: 20px 0;
-  background-color: aquamarine;
+.rental1 .rental-img {
+    background: url(/src/retal_img_01.jpg) center no-repeat;
+    background-size: auto;
+    height: 340px;
 }
 
-.app-info {
-  width: 100%;
-
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-  color: white;
-  background-color: rgb(76, 139, 76);
+.rental2 .rental-img {
+    background: url(/src/retal_img_02.jpg) center no-repeat;
+    background-size: auto;
+    height: 340px;
 }
 
-.btns {
-  display: flex;
-  margin: 50px 0;
+.rental-box .title {
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 20px;
 }
 
-.btns p {
-  font-size: 0.8rem;
+.rental-component p {
+    font-size: 15px;
 }
 
-.appstore,
-.playstore {
-  width: 240px;
-  border: 2px solid white;
-  border-radius: 5px;
+.download {
+    width: 100%;
+    height: 480px;
+    background: url(/src/app_bg.jpg) center no-repeat;
+    background-size: auto;
+    position: relative;
 
-  padding-bottom: 10px;
-  text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.appstore {
-  margin-right: 20px;
+.down-container {
+    width: 1200px;
+    height: 240px;
+    position: absolute;
+    color: white;
+    margin: 0 auto;
 }
 
-.app-info .btns a,
-.app-info .btns a p {
-  color: white;
+.down-container h2 {
+    font-size: 35px;
+    margin-bottom: 25px;
 }
 
-.app-info .left-info {
-  width: 800px;
+.down-container p {
+    font-size: 15px;
+    margin-bottom: 65px;
 }
 
-.app-info .left-info p {
-  max-width: 620px;
+.down-btn a {
+    color: transparent;
 }
 
-.app-info .right-img {
-  width: 250px;
-  height: 350px;
-  margin-left: 100px;
-  background-color: aliceblue;
+.down-btn a:nth-child(1) {
+    display: inline-block;
+    background: url(/src/app_ios.png) center no-repeat;
+    width: 241px;
+    height: 73px;
+}
+
+.down-btn a:nth-child(2) {
+    display: inline-block;
+    background: url(/src/app_and.png) center no-repeat;
+    width: 241px;
+    height: 73px;
+    margin-left: 20px;
 }
 
 footer {
-  background-color: rgb(228, 225, 222);
-  margin: 50px 0 200px 0;
+    margin-top: 52px;
+    margin-bottom: 200px;
+    width: 100%;
+    height: 152px;
+    background-color: #EDEDED;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
-.foot-container {
-  width: 60%;
-  margin: 0 auto;
-  padding-top: 20px;
+.footer-container {
+    width: 1030px;
 }
 
-.foot-container ul {
-  display: flex;
-  margin: 20px 0;
+.footer-container ul {
+    display: flex;
 }
 
-.foot-container ul li {
-  margin-right: 20px;
-
-  font-size: 0.8rem;
-  font-weight: bolder;
+.footer-container>ul li a {
+    font-size: 13px;
+    margin-right: 50px;
+    font-weight: bold;
 }
 
-.foot-container .copy-right {
-  display: flex;
-  justify-content: space-between;
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  font-size: 0.7rem;
+    padding-bottom: 15px;
+}
+
+.footer-bottom p {
+    margin-top: 32px;
+    font-size: 12px;
+}
+
+.footer-bottom>ul li a {
+    color: transparent;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin: 0 10px;
+}
+
+.footer-bottom>ul li:nth-child(1) a {
+    background: url(/src/instaLink.png) center no-repeat;
+}
+
+.footer-bottom>ul li:nth-child(2) a {
+    background: url(/src/facebookLink.png) center no-repeat;
+}
+
+.footer-bottom>ul li:nth-child(3) a {
+    background: url(/src/naverblogLink.png) center no-repeat;
 }
