@@ -82,7 +82,7 @@ body {
 .main-img {
     height: 720px;
     background-size: auto;
-    background: url(/src/main_img.jpg) center no-repeat;
+    background: url(src/main_img.jpg) center no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -214,19 +214,19 @@ body {
 }
 
 .main-menu ul li:nth-of-type(1) a {
-    background: url(/src/mainTab_1.gif);
+    background: url(src/mainTab_1.gif);
 }
 
 .main-menu ul li:nth-of-type(2) a {
-    background: url(/src/mainTab_2.gif);
+    background: url(src/mainTab_2.gif);
 }
 
 .main-menu ul li:nth-of-type(3) a {
-    background: url(/src/mainTab_3.gif);
+    background: url(src/mainTab_3.gif);
 }
 
 .main-menu ul li:nth-of-type(4) a {
-    background: url(/src/mainTab_4.gif);
+    background: url(src/mainTab_4.gif);
 }
 
 .sub-img {
@@ -239,7 +239,7 @@ body {
 
 .city-img {
     display: flex;
-    background: url(/src/main_img_02.jpg) center no-repeat;
+    background: url(src/main_img_02.jpg) center no-repeat;
     background-size: auto;
     height: 720px;
     margin: 0 auto;
@@ -276,19 +276,19 @@ body {
 }
 
 .info1 .info-img {
-    background: url(/src/bikeseoul_img1.jpg) center no-repeat;
+    background: url(src/bikeseoul_img1.jpg) center no-repeat;
     background-size: auto;
     height: 240px;
 }
 
 .info2 .info-img {
-    background: url(/src/bikeseoul_img2.jpg) center no-repeat;
+    background: url(src/bikeseoul_img2.jpg) center no-repeat;
     background-size: auto;
     height: 240px;
 }
 
 .info3 .info-img {
-    background: url(/src/bikeseoul_img4.jpg) center no-repeat;
+    background: url(src/bikeseoul_img4.jpg) center no-repeat;
     background-size: auto;
     height: 240px;
 }
@@ -335,13 +335,13 @@ body {
 }
 
 .rental1 .rental-img {
-    background: url(/src/retal_img_01.jpg) center no-repeat;
+    background: url(src/retal_img_01.jpg) center no-repeat;
     background-size: auto;
     height: 340px;
 }
 
 .rental2 .rental-img {
-    background: url(/src/retal_img_02.jpg) center no-repeat;
+    background: url(src/retal_img_02.jpg) center no-repeat;
     background-size: auto;
     height: 340px;
 }
@@ -360,7 +360,7 @@ body {
 .download {
     width: 100%;
     height: 480px;
-    background: url(/src/app_bg.jpg) center no-repeat;
+    background: url(src/app_bg.jpg) center no-repeat;
     background-size: auto;
     position: relative;
 
@@ -393,14 +393,14 @@ body {
 
 .down-btn a:nth-child(1) {
     display: inline-block;
-    background: url(/src/app_ios.png) center no-repeat;
+    background: url(src/app_ios.png) center no-repeat;
     width: 241px;
     height: 73px;
 }
 
 .down-btn a:nth-child(2) {
     display: inline-block;
-    background: url(/src/app_and.png) center no-repeat;
+    background: url(src/app_and.png) center no-repeat;
     width: 241px;
     height: 73px;
     margin-left: 20px;
@@ -456,13 +456,13 @@ footer {
 }
 
 .footer-bottom>ul li:nth-child(1) a {
-    background: url(/src/instaLink.png) center no-repeat;
+    background: url(src/instaLink.png) center no-repeat;
 }
 
 .footer-bottom>ul li:nth-child(2) a {
-    background: url(/src/facebookLink.png) center no-repeat;
+    background: url(src/facebookLink.png) center no-repeat;
 }
 
 .footer-bottom>ul li:nth-child(3) a {
-    background: url(/src/naverblogLink.png) center no-repeat;
+    background: url(src/naverblogLink.png) center no-repeat;
 }
